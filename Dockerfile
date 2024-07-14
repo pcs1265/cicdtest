@@ -1,4 +1,4 @@
-FROM amazoncorretto:17.0.11-alpine
+FROM amazoncorretto:17
 
 ADD /build/libs/cicdtest-0.0.1-SNAPSHOT.jar app.jar
 
