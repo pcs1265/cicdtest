@@ -1,5 +1,7 @@
 package com.ssafy.lucky.cicdtest;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +12,9 @@ public class Main {
     
     @GetMapping("/")
     public String getMethodName(Model model) {
-        model.addAttribute("testStr", "모델에 있는 어트리뷰트를 표시합니다.");
+        Date now = new Date();
+        model.addAttribute("versionStr", "0.0.1");
+        model.addAttribute("dateStr", now.toString());
         return new String("index.html");
     }
 
