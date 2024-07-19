@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-CicdtestApplication<cicdtest>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ssafy.lucky.cicdtest.CicdtestApplication",
+      "projectName": "cicdtest",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
