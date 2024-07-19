@@ -8,4 +8,4 @@ npm run build
 
 cd ../backend
 
-gradle clean build
+./gradlew clean build
