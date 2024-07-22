@@ -1,3 +1,13 @@
 #!/bin/bash
 
-java -jar ./backend/build/libs/cicdtest-0.0.1-SNAPSHOT.jar
+dirpath=`dirname $0`
+
+cd $dirpath/frontend
+
+npm install
+
+npm run build
+
+cd $dirpath/backend
+
+./gradlew bootRun

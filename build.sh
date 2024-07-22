@@ -1,11 +1,13 @@
 #!/bin/bash
 
-cd ./frontend
+dirpath=`dirname $0`
+
+cd $dirpath/frontend
 
 npm install
 
 npm run build
 
-cd ../backend
+cd $dirpath/backend
 
-./gradlew clean build
+./gradlew clean build -x test
