@@ -2,12 +2,6 @@
 
 dirpath=`dirname $0`
 
-cd $dirpath/frontend
+sh $dirpath/frontend/build.sh
 
-npm install
-
-npm run build
-
-cd $dirpath/backend
-
-./gradlew clean build -x test
+sh $dirpath/backend/build.sh
